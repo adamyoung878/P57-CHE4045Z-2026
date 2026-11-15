@@ -15,7 +15,7 @@ A MINLP of four co-located players that share steam, power and heat: 1 SCN-CHP 2
 ## Setup
 
 1. GAMS 54 (DICOPT, CONOPT, CPLEX). The demo licence is enough.
-2. Python 3.8+ with `pandas` and `openpyxl` (`py -m pip install pandas openpyxl`).
+2. Python 3.8+ with `pandas` and `openpyxl`.
 
 GAMS is found on the PATH or in the Windows registry. If not, set `GAMS = r'C:\GAMS\54\gams.exe'` at the top of `run_coalitions.py`.
 
