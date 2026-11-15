@@ -145,9 +145,8 @@ gams base_model.gms --COAL=134 --OBJ=EcO
 - `solved = True` means GAMS returned a solution. It is not a proof of global optimality.
 - `pipeline.py` hashes `base_model.gms` ignoring blank lines and `*` comment lines. Changing any other line makes `starts/` and every `stamp.txt` out of date, so the next `python pipeline.py` refreshes the starts and reruns all scenarios.
 
-## Authors and licence
+## Authors
 
 Authors:        Adam Young and Flynn Newell
 Course:         CHE4045Z, 2026
 Supervisors:    Prof. Adeniyi Isafiade, Takudzwa Chitsiga, Dr. Kyle Abrahams
-Released under the licence in [`LICENSE`](LICENSE).
