@@ -1,0 +1,4199 @@
+--- Job base_model.gms Start 11/15/26 13:16:20 54.4.0 9a60ae27 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\54\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "C:\Users\Adam\Desktop\P57 CHE4045Z 2026\base_model.gms"
+    Output "C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\run.lst"
+    ScrDir "C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\225a\"
+    SysDir C:\GAMS\54\
+    LogOption 2
+    LogFile "C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\run.log"
+    AppendLog 1
+    GDX "C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\sol.gdx"
+    --COAL 1234
+    --DINDMULT 0.5
+    --RG2 0.25
+    --RG4 0.75
+    --START ..\..\starts\1234.gdx
+Licensee: GAMS Demo, for EULA and demo limitations see   G261028+0003Cc-GEN
+          https://www.gams.com/latest/docs/UG%5FLicense.html         DC0000
+          C:\Users\Adam\Documents\GAMS\gamslice.txt
+          aaaed85b-f808-48f1
+          v:2                                                              
+          Demo license for demonstration and instructional purposes only
+System information: 16 physical cores and 16 Gb physical memory detected
+GAMS 54.4.0   Copyright (C) 1987-2026 GAMS Development. All rights reserved
+--- Starting compilation
+--- base_model.gms(1847) 3 Mb
+--- Found nested $ifThen within $If statement (line 1840).
+--- Use unique tag to ensure correct behavior.
+--- Found nested $ifThen within $If statement.
+--- Use unique tag to ensure correct behavior.
+--- base_model.gms(1930) 3 Mb
+--- Found nested $ifThen within $If statement (line 1902).
+--- Use unique tag to ensure correct behavior.
+--- base_model.gms(2008) 3 Mb
+--- Starting execution: elapsed 0:00:00.020
+--- base_model.gms(1842) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\starts\1234.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\starts\1234.gdx
+--- base_model.gms(1843) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\starts\1234.gdx
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\starts\1234.gdx
+--- base_model.gms(1907) 4 Mb
+--- Generating RMINLP model CGT
+--- base_model.gms(1908) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1908) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:00.026
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          4.4170889169E-11 (Input point)
+ 
+    The pre-triangular part of the model has 235 constraints and 224 variables.
+    The post-triangular part of the model has 146 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+ 
+    Preprocessed model has 67 constraints and 77 variables
+    with 186 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.8909320210E-11 (Full preprocessed model)
+                      3.3723024373E-15 (After scaling)
+                      3.3723024373E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    63.3325795827
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          6.3332579583E+01 5.1E+02       8 6.3E-12     6 F  F
+       2   4          6.3332579583E+01 6.4E-12       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.123
+--- Generating MINLP model CGT
+--- base_model.gms(1909) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1909) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:00.139
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          4.3905351577E-11 (Input point)
+ 
+    The pre-triangular part of the model has 235 constraints and 224 variables.
+    The post-triangular part of the model has 146 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+ 
+    Preprocessed model has 67 constraints and 77 variables
+    with 186 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.4335229104E-11 (Full preprocessed model)
+                      2.6090241079E-15 (After scaling)
+                      2.6090241079E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    63.3325795827
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          6.3332579583E+01 5.1E+02      10 4.2E-12     7 F  T
+       2   4          6.3332579583E+01 1.6E-14       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Setting up first MIP
+--- DICOPT: Relaxed NLP gives integer solution
+
+      The Relaxed NLP gave a solution where all the integer
+      variables have integral values. There is no need to
+      to continue the search.
+
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.291
+--- base_model.gms(1911) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG5.gdx
+--- base_model.gms(1913) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- base_model.gms(1918) 4 Mb
+--- Generating MINLP model CGT
+--- base_model.gms(1919) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1919) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:00.309
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          5.5448815492E+02 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.7632147398E-11 (Full preprocessed model)
+                      6.1797789108E-14 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    617.820734501
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.9569767503E+02 1.1E+02      13 1.0E+00    18 T  T
+       3   4          1.9565317838E+02 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+--- GMO Resort Time 0ms
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9850006
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 323 rows and 358 columns.
+MIP Presolve modified 125 coefficients.
+Aggregator did 18 substitutions.
+Reduced MIP has 107 rows, 113 columns, and 392 nonzeros.
+Reduced MIP has 18 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (0.82 ticks)
+Found incumbent of value 687.979959 after 0.01 sec. (1.14 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 14 coefficients.
+Reduced MIP has 107 rows, 113 columns, and 392 nonzeros.
+Reduced MIP has 18 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.20 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 18 substitutions.
+Reduced LP has 88 rows, 94 columns, and 352 nonzeros.
+Presolve time = 0.00 sec. (0.08 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:    62   Dual objective     =           193.324660
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           195.653178
+Root relaxation solution time = 0.00 sec. (0.47 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          687.9800        0.0000           100.00%
+Found incumbent of value 687.979959 after 0.01 sec. (1.98 ticks)
+*     0+    0                          432.9145        0.0000           100.00%
+Found incumbent of value 432.914477 after 0.01 sec. (1.98 ticks)
+      0     0      195.6532     3      432.9145      195.6532       70   54.81%
+*     0+    0                          208.6730      195.6532             6.24%
+Found incumbent of value 208.673000 after 0.01 sec. (2.26 ticks)
+      0     0      196.8661     4      208.6730      Cuts: 17       90    5.66%
+      0     0      199.2216     3      208.6730       Cuts: 7       95    4.53%
+      0     0      201.0059     3      208.6730      Cuts: 12      100    3.67%
+*     0+    0                          206.3585      201.0059             2.59%
+Found incumbent of value 206.358548 after 0.01 sec. (4.86 ticks)
+*     0+    0                          206.3585      201.0059             2.59%
+Found incumbent of value 206.358548 after 0.08 sec. (5.26 ticks)
+      0     0        cutoff            206.3585      206.3585      100    0.00%
+Elapsed time = 0.08 sec. (5.27 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  3
+Flow cuts applied:  4
+Mixed integer rounding cuts applied:  5
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (5.28 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (5.28 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.08sec (det. 5.28 ticks)
+
+
+Proven optimal solution
+MIP Solution:          206.358548    (100 iterations, 0 nodes)
+
+Best possible:         206.358548
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.8117792281E+05 (Input point)
+ 
+    The pre-triangular part of the model has 158 constraints and 135 variables.
+    The post-triangular part of the model has 153 constraints and variables.
+    There are 25 definitional constraints and defined variables.
+ 
+    Preprocessed model has 112 constraints and 134 variables
+    with 375 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.6800040454E-08 (Full preprocessed model)
+                      9.8826444104E-12 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    206.358547621
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          2.0635854762E+02 1.9E+00       1 1.0E+00     1 T  T
+       2   4          2.0635854762E+02 6.3E-14       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1       195.65318      0.01        3      0      conopt
+  MIP    1       206.35855      0.08      100      0      cplex
+  NLP    2       206.35855<     0.02        2      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8910007
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 284 rows and 325 columns.
+MIP Presolve modified 164 coefficients.
+Aggregator did 18 substitutions.
+Reduced MIP has 168 rows, 177 columns, and 591 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.08 ticks)
+Found incumbent of value 1375.077515 after 0.02 sec. (1.42 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 4 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 164 rows, 169 columns, and 569 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.40 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 0 columns.
+Aggregator did 24 substitutions.
+Reduced LP has 139 rows, 145 columns, and 521 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:    62   Dual objective     =            26.876580
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           195.653178
+Root relaxation solution time = 0.00 sec. (0.73 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1375.0775        0.0000           100.00%
+Found incumbent of value 1375.077515 after 0.02 sec. (2.81 ticks)
+      0     0      195.6532     4     1375.0775      195.6532      100   85.77%
+      0     0      200.6841     4     1375.0775      Cuts: 28      123   85.41%
+*     0+    0                          280.1861      200.6841            28.37%
+Found incumbent of value 280.186103 after 0.02 sec. (4.43 ticks)
+      0     0      205.1445     3      280.1861      Cuts: 10      132   26.78%
+*     0+    0                          216.2614      205.1445             5.14%
+Found incumbent of value 216.261441 after 0.02 sec. (5.57 ticks)
+      0     0      205.2554     4      216.2614      Cuts: 35      141    5.09%
+      0     0      205.7515     1      216.2614       Cuts: 3      147    4.86%
+      0     0      205.7515     3      216.2614   MIRcuts: 12      152    4.86%
+      0     0      205.7515     3      216.2614      Cuts: 11      155    4.86%
+*     0+    0                          209.0576      205.7515             1.58%
+Found incumbent of value 209.057630 after 0.02 sec. (9.73 ticks)
+*     0+    0                          206.3585      205.7515             0.29%
+Found incumbent of value 206.358548 after 0.06 sec. (10.05 ticks)
+      0     0        cutoff            206.3585      206.3585      155    0.00%
+Elapsed time = 0.06 sec. (10.06 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  1
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  4
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (10.07 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.06 sec. (10.07 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 10.07 ticks)
+
+
+Proven optimal solution
+MIP Solution:          206.358548    (155 iterations, 0 nodes)
+
+Best possible:         206.358548
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+ ** Function value overflow in the initial point.
+ 
+*** SOLVER ERROR: Failed solving model
+*** Contact support@gams.com for help.
+--- DICOPT: Checking convergence
+--- DICOPT: No NLP solution
+
+      The NLP solver did not store a solution.
+      DICOPT will terminate.
+
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1       195.65318      0.01        3      0      conopt
+  MIP    1       206.35855      0.08      100      0      cplex
+  NLP    2       206.35855<     0.02        2      0      conopt
+  MIP    2       206.35855      0.06      155      0      cplex
+  NLP    3       *Failure*      0.00        0      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped prematurely because of Solver Failure
+
+      DICOPT terminated prematurely because of a solver
+      failure. The listing file will contain additional
+      logs from the NLP and MIP solvers which may reveal
+      what was the cause of the failure.
+
+--- DICOPT: Best integer solution found: 206.358548
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.600
+--- base_model.gms(1921) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG1.gdx
+--- base_model.gms(1931) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_ei.gdx
+--- base_model.gms(1932) 4 Mb
+--- Generating RMINLP model CGT
+--- base_model.gms(1933) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 4.032E+19] - Zero values observed as well
+--- base_model.gms(1933) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:00.604
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+ ** Function value overflow in the initial point.
+ 
+*** SOLVER ERROR: Failed solving model
+*** Contact support@gams.com for help.
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.659
+--- base_model.gms(1935) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_rg0.gdx
+--- base_model.gms(1936) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- Generating RMINLP model CGT
+--- base_model.gms(1937) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1937) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:00.667
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.5694314924E+05 (Input point)
+ 
+    The pre-triangular part of the model has 269 constraints and 260 variables.
+    The post-triangular part of the model has 99 constraints and variables.
+ 
+    Preprocessed model has 80 constraints and 88 variables
+    with 223 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.7252932504E+05 (Full preprocessed model)
+                      8.2890573901E+00 (After scaling)
+                      5.0767337949E+00 (After adjusting individual variables)
+ 
+ ** Feasible solution. Value of objective =    139.124782946
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       6   4          1.1873894224E+02 4.4E+01       7 1.0E+00     7 T  T
+      11   4          1.1791310561E+02 1.2E-03       1 1.0E+00     1 F  T
+      13   4          1.1791310561E+02 3.7E-11       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.717
+--- base_model.gms(1938) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG1.gdx
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_ei.gdx
+--- base_model.gms(1940) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_rg0.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_rg0.gdx
+--- Generating MINLP model CGT
+--- base_model.gms(1941) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 4.032E+19] - Zero values observed as well
+--- base_model.gms(1941) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:00.726
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+ ** Function value overflow in the initial point.
+ 
+*** SOLVER ERROR: Failed solving model
+*** Contact support@gams.com for help.
+--- DICOPT: Setting up first MIP
+--- DICOPT: No NLP solution
+
+      The NLP solver did not store a solution.
+      DICOPT will terminate.
+
+--- DICOPT: Could not solve relaxed NLP
+
+      The relaxed NLP could not be solved. Please make sure
+      the model solves as an RMINLP model.
+
+--- DICOPT: Stopped prematurely because of Solver Failure
+
+      DICOPT terminated prematurely because of a solver
+      failure. The listing file will contain additional
+      logs from the NLP and MIP solvers which may reveal
+      what was the cause of the failure.
+
+--- DICOPT: No solution
+
+      No solution was found. There must have been an error.
+
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.820
+--- base_model.gms(1943) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- Generating RMINLP model CGT
+--- base_model.gms(1944) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1944) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:00.830
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          4.7379455910E+02 (Input point)
+ 
+    The pre-triangular part of the model has 61 constraints and 49 variables.
+    The post-triangular part of the model has 146 constraints and variables.
+    There are 32 definitional constraints and defined variables.
+ 
+    Preprocessed model has 209 constraints and 220 variables
+    with 751 Jacobian elements, 6 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      4.1146198052E+02 (Full preprocessed model)
+                      3.2145467228E+00 (After scaling)
+       1   1       3  1.8167221139E+00 9.3E+01      16 1.0E+00    17 T  T
+ 
+ ** Feasible solution. Value of objective =    70.9679467153
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       5   4          5.9114258799E+01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:00.895
+--- Generating MINLP model CGT
+--- base_model.gms(1945) 6 Mb
+---   448 rows  447 columns  1,545 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1945) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:00.901
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.3034584747E-10 (Input point)
+ 
+    The pre-triangular part of the model has 61 constraints and 49 variables.
+    The post-triangular part of the model has 146 constraints and variables.
+    There are 32 definitional constraints and defined variables.
+ 
+    Preprocessed model has 209 constraints and 220 variables
+    with 751 Jacobian elements, 6 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.1533604902E-10 (Full preprocessed model)
+                      7.9664726107E-14 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    59.1142587992
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          5.9114258799E+01 3.1E-01       7 1.0E+00     7 T  T
+       2   4          5.9114258799E+01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9850006
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 3 times.
+MIP Presolve eliminated 239 rows and 265 columns.
+MIP Presolve modified 142 coefficients.
+Aggregator did 42 substitutions.
+Reduced MIP has 167 rows, 182 columns, and 640 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.21 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 2 rows and 4 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 165 rows, 178 columns, and 635 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 13 rows and 12 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 131 rows, 145 columns, and 566 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =           -40.001762
+Iteration:    63   Dual objective     =           -27.702251
+Removing shift (3).
+Iteration:   108   Scaled dual infeas =             0.000000
+Iteration:   109   Dual objective     =            68.735676
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            68.735676
+Root relaxation solution time = 0.02 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       68.7357    12                     68.7357      109         
+      0     0       80.6725     5                    Cuts: 61      141         
+      0     0       92.8355     8                    Cuts: 29      160         
+*     0+    0                          104.0225       92.8355            10.75%
+Found incumbent of value 104.022516 after 0.02 sec. (7.93 ticks)
+      0     0       92.9970     9      104.0225      Cuts: 11      162   10.60%
+      0     0      102.3540     4      104.0225      Cuts: 18      172    1.60%
+      0     0      102.3632     4      104.0225       Cuts: 5      173    1.60%
+Detecting symmetries...
+      0     0      102.3653     1      104.0225       Cuts: 6      176    1.59%
+*     0+    0                          102.4059      102.3653             0.04%
+Found incumbent of value 102.405868 after 0.03 sec. (12.02 ticks)
+*     0+    0                          102.4059      102.3653             0.04%
+Found incumbent of value 102.405868 after 0.05 sec. (14.19 ticks)
+      0     0        cutoff            102.4059      102.4059      176    0.00%
+Elapsed time = 0.05 sec. (14.21 ticks, tree = 0.01 MB)
+
+Clique cuts applied:  1
+Cover cuts applied:  2
+Implied bound cuts applied:  3
+Flow cuts applied:  16
+Mixed integer rounding cuts applied:  7
+Zero-half cuts applied:  1
+Multi commodity flow cuts applied:  1
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (14.22 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (14.22 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.05sec (det. 14.22 ticks)
+
+
+Proven optimal solution
+MIP Solution:          102.405868    (176 iterations, 0 nodes)
+
+Best possible:         102.405868
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.8043628273E+05 (Input point)
+ 
+    The pre-triangular part of the model has 248 constraints and 242 variables.
+    The post-triangular part of the model has 115 constraints and variables.
+ 
+    Preprocessed model has 85 constraints and 90 variables
+    with 231 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.0331223508E+02 (Full preprocessed model)
+                      1.8512709667E-02 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    111.684699596
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.0882430214E+02 5.3E+03       7 1.0E+00     2 T  T
+       2   4          1.0882430214E+02 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1        59.11426      0.01        2      0      conopt
+  MIP    1       102.40587      0.05      176      0      cplex
+  NLP    2       108.82430<     0.01        2      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9230003
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 3 times.
+MIP Presolve eliminated 242 rows and 270 columns.
+MIP Presolve modified 172 coefficients.
+Aggregator did 48 substitutions.
+Reduced MIP has 180 rows, 204 columns, and 768 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.40 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 1 rows and 2 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 179 rows, 202 columns, and 764 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.42 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 0 columns.
+Aggregator did 11 substitutions.
+Reduced LP has 167 rows, 191 columns, and 740 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          7441.169359
+Iteration:    62   Dual objective     =          7503.706123
+Removing shift (2).
+Iteration:   114   Scaled dual infeas =             0.000000
+Iteration:   115   Dual objective     =          7549.955043
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          7549.977838
+Root relaxation solution time = 0.00 sec. (1.32 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     7549.9778    12                   7549.9778      117         
+      0     0     7556.1924     8                    Cuts: 67      157         
+      0     0     7566.2790    10                    Cuts: 32      181         
+      0     0     7566.5130    15                    Cuts: 31      207         
+      0     0     7566.7752    11                    Cuts: 32      230         
+      0     0     7567.7150    11                    Cuts: 29      252         
+*     0+    0                         7592.2312     7567.7150             0.32%
+Found incumbent of value 7592.231190 after 0.03 sec. (13.13 ticks)
+      0     0     7567.8259    14     7592.2312       Cuts: 9      259    0.32%
+      0     0     7571.6399    11     7592.2312      Cuts: 13      271    0.27%
+      0     0     7571.7895    13     7592.2312      Cuts: 17      276    0.27%
+      0     0        cutoff           7592.2312     7592.2312      276    0.00%
+Elapsed time = 0.05 sec. (23.24 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  7
+Flow cuts applied:  13
+Mixed integer rounding cuts applied:  21
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (23.25 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (23.25 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.05sec (det. 23.25 ticks)
+
+
+Proven optimal solution
+MIP Solution:         7592.231190    (276 iterations, 0 nodes)
+
+Best possible:        7592.231190
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1545 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          9.9000000028E+14 (Input point)
+ 
+    The pre-triangular part of the model has 287 constraints and 278 variables.
+    The post-triangular part of the model has 97 constraints and variables.
+    There are 8 definitional constraints and defined variables.
+ 
+    Preprocessed model has 56 constraints and 64 variables
+    with 160 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.1422864311E-11 (Full preprocessed model)
+                      3.5603464621E-14 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    108.782442138
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.0878244214E+02 2.2E+01       5 1.0E+00     4 T  T
+       2   4          1.0878244214E+02 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1        59.11426      0.01        2      0      conopt
+  MIP    1       102.40587      0.05      176      0      cplex
+  NLP    2       108.82430<     0.01        2      0      conopt
+  MIP    2      7592.23119      0.05      276      0      cplex
+  NLP    3       108.78244<     0.02        2      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.62 Mb (peak 0.63 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8599987
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 3 times.
+MIP Presolve eliminated 258 rows and 287 columns.
+MIP Presolve modified 197 coefficients.
+Aggregator did 48 substitutions.
+Reduced MIP has 186 rows, 214 columns, and 826 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.63 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 4 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 182 rows, 206 columns, and 810 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.50 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 0 columns.
+Aggregator did 10 substitutions.
+Reduced LP has 171 rows, 196 columns, and 788 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           -39.999705
+Iteration:    62   Dual objective     =            29.542496
+Removing shift (2).
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            68.808774
+Root relaxation solution time = 0.00 sec. (1.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       68.8088    12                     68.8088       91         
+      0     0       75.0233     8                    Cuts: 66      129         
+      0     0       85.1099    10                    Cuts: 32      153         
+      0     0       85.3439    15                    Cuts: 31      179         
+      0     0       85.6062    11                    Cuts: 32      202         
+      0     0       86.5460    11                    Cuts: 29      224         
+*     0+    0                          111.1040       86.5460            22.10%
+Found incumbent of value 111.103986 after 0.01 sec. (13.23 ticks)
+      0     0       86.6585    14      111.1040       Cuts: 9      231   22.00%
+      0     0       90.4723    11      111.1040      Cuts: 12      243   18.57%
+      0     0       90.6219    13      111.1040      Cuts: 14      248   18.44%
+      0     0       91.0155    13      111.1040       Cuts: 8      255   18.08%
+      0     0       91.0791    13      111.1040       Cuts: 8      261   18.02%
+      0     0       91.1910    14      111.1040    MIRcuts: 3      264   17.92%
+      0     0       94.6755    12      111.1040    MIRcuts: 7      273   14.79%
+      0     0       94.7079    13      111.1040       Cuts: 5      276   14.76%
+      0     0       94.7409    13      111.1040       Cuts: 6      280   14.73%
+      0     0       94.8200    14      111.1040       Cuts: 5      284   14.66%
+      0     0       95.2061    13      111.1040       Cuts: 6      291   14.31%
+      0     0       95.6555    14      111.1040      Cuts: 15      299   13.90%
+      0     0       95.6619    15      111.1040   Flowcuts: 3      300   13.90%
+      0     0       95.7189    14      111.1040    MIRcuts: 3      303   13.85%
+      0     0       95.7251    15      111.1040   Flowcuts: 1      306   13.84%
+      0     0        cutoff            111.1040      111.1040      306    0.00%
+Elapsed time = 0.05 sec. (42.08 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  8
+Flow cuts applied:  13
+Mixed integer rounding cuts applied:  21
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (42.09 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (42.09 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 42.09 ticks)
+
+
+Proven optimal solution
+MIP Solution:          111.103986    (306 iterations, 0 nodes)
+
+Best possible:         111.103986
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 4
+Current obj : 111.104
+Previous obj: 7592.23
+Objdiff     : 0.985236
+EPSMIP      : 1e-06
+--- DICOPT: Unexpected objective in MIP
+
+The MIP solution became better after adding integer cuts.
+Something is wrong. Please check if your model is properly
+scaled. Also check your big M formulations -- the value
+of M should be relatively small.
+
+This error can also occur if you used a MIP solver option
+file with a nonzero OPTCR or OPTCA setting. In that case
+you may want to increase the EPSMIP setting using a
+DICOPT option file.
+
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1        59.11426      0.01        2      0      conopt
+  MIP    1       102.40587      0.05      176      0      cplex
+  NLP    2       108.82430<     0.01        2      0      conopt
+  MIP    2      7592.23119      0.05      276      0      cplex
+  NLP    3       108.78244<     0.02        2      0      conopt
+  MIP    3       111.10399      0.06      306      0      cplex
+--- DICOPT: Terminating...
+--- DICOPT: Stopped prematurely because of Solver Failure
+
+      DICOPT terminated prematurely because of a solver
+      failure. The listing file will contain additional
+      logs from the NLP and MIP solvers which may reveal
+      what was the cause of the failure.
+
+--- DICOPT: Best integer solution found: 108.782442
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:01.198
+--- base_model.gms(1947) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_ei.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_ei.gdx
+--- base_model.gms(1950) 4 Mb
+--- Generating MINLP model CGT
+--- base_model.gms(1952) 6 Mb
+--- LOOPS* = RG2
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1952) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:01.204
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.1545175903E-01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.3182581682E-11 (Full preprocessed model)
+                      2.3106516700E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.21545275900
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          9.6581889944E-01 1.2E-01      22 1.0E+00    25 T  T
+       6   4          9.5227803175E-01 1.4E-02       5 1.0E+00     1 T  T
+      11   4          9.5154642124E-01 6.1E-03       4 1.0E+00     2 F  T
+      14   4          9.5131358987E-01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9839993
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 256 rows and 278 columns.
+MIP Presolve modified 101 coefficients.
+Aggregator did 19 substitutions.
+Reduced MIP has 173 rows, 192 columns, and 609 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.95 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 170 rows, 184 columns, and 599 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 14 rows and 13 columns.
+Aggregator did 20 substitutions.
+Reduced LP has 136 rows, 151 columns, and 530 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =            -0.154333
+Iteration:    63   Dual objective     =             0.045363
+Removing shift (6).
+Iteration:    83   Scaled dual infeas =             0.000006
+Iteration:    86   Dual objective     =             0.927387
+Removing shift (2).
+Initializing dual steep norms . . .
+Iteration:   101   Scaled dual infeas =             0.000298
+Iteration:   103   Dual objective     =             0.952970
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.952979
+Root relaxation solution time = 0.00 sec. (0.89 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           14.6271                            --- 
+Found incumbent of value 14.627079 after 0.00 sec. (3.85 ticks)
+      0     0        0.9530    11       14.6271        0.9530      104   93.48%
+      0     0        0.9854     6       14.6271      Cuts: 58      127   93.26%
+      0     0        1.0308     6       14.6271      Cuts: 15      169   92.95%
+      0     0        1.0997     6       14.6271      Cuts: 20      181   92.48%
+      0     0        1.1003     4       14.6271      Cuts: 10      185   92.48%
+*     0+    0                            1.1473        1.1003             4.10%
+Found incumbent of value 1.147285 after 0.02 sec. (9.14 ticks)
+      0     0        1.1011     5        1.1473       Cuts: 3      186    4.02%
+Detecting symmetries...
+      0     0        1.1388     4        1.1473       Cuts: 5      190    0.74%
+*     0+    0                            1.1431        1.1388             0.38%
+Found incumbent of value 1.143126 after 0.06 sec. (12.43 ticks)
+      0     0        cutoff              1.1431        1.1431      190    0.00%
+Elapsed time = 0.06 sec. (12.44 ticks, tree = 0.01 MB)
+
+Cover cuts applied:  1
+Implied bound cuts applied:  12
+Flow cuts applied:  9
+Mixed integer rounding cuts applied:  16
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (12.45 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.06 sec. (12.45 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 12.45 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.143126    (190 iterations, 0 nodes)
+
+Best possible:           1.143126
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7908070100E+05 (Input point)
+ 
+    The pre-triangular part of the model has 269 constraints and 262 variables.
+    The post-triangular part of the model has 120 constraints and variables.
+ 
+    Preprocessed model has 59 constraints and 65 variables
+    with 166 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.1639135756E-12 (Full preprocessed model)
+                      1.5959455979E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.27857746408
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2267052584E+00 2.1E+01       8 2.8E-02    12 F  T
+       6   4          1.1778572940E+00 2.5E-01       6 1.0E+00     4 T  T
+      11   4          1.1765831876E+00 4.8E-08       3
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95131      0.02       14      0      conopt
+  MIP    1         1.14313      0.06      190      0      cplex
+  NLP    2         1.17658<     0.02       11      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9049988
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 248 rows and 261 columns.
+MIP Presolve modified 130 coefficients.
+Aggregator did 28 substitutions.
+Reduced MIP has 194 rows, 238 columns, and 785 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.13 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 8 rows and 16 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 186 rows, 222 columns, and 750 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.55 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 4 rows and 10 columns.
+Aggregator did 11 substitutions.
+Reduced LP has 171 rows, 201 columns, and 711 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.155779
+Iteration:    62   Dual objective     =             0.963927
+Removing shift (9).
+Iteration:    66   Scaled dual infeas =             0.000002
+Iteration:    69   Dual objective     =             0.952733
+Removing shift (2).
+Iteration:    78   Scaled dual infeas =             0.000001
+Iteration:    82   Dual objective     =             0.946560
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.952737
+Root relaxation solution time = 0.00 sec. (1.07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           22.5229       -0.1564           100.69%
+Found incumbent of value 22.522891 after 0.00 sec. (3.50 ticks)
+*     0+    0                            6.2865       -0.1564           102.49%
+Found incumbent of value 6.286538 after 0.00 sec. (3.50 ticks)
+      0     0        0.9527    13        6.2865        0.9527       86   84.84%
+      0     0        0.9849    12        6.2865      Cuts: 71      123   84.33%
+      0     0        1.0010    10        6.2865      Cuts: 35      142   84.08%
+      0     0        1.0555    13        6.2865      Cuts: 22      158   83.21%
+      0     0        1.0680     9        6.2865      Cuts: 21      170   83.01%
+*     0+    0                            1.5416        1.0680            30.72%
+Found incumbent of value 1.541577 after 0.01 sec. (11.14 ticks)
+      0     0        1.0864     9        1.5416      Cuts: 10      178   29.53%
+      0     0        1.0866     9        1.5416       Cuts: 6      183   29.51%
+      0     0        1.0869    12        1.5416       Cuts: 7      188   29.49%
+      0     0        1.0873    14        1.5416      Cuts: 13      207   29.47%
+      0     0        1.0878    15        1.5416      Cuts: 41      219   29.44%
+*     0+    0                            1.2344        1.0878            11.88%
+Found incumbent of value 1.234402 after 0.01 sec. (18.58 ticks)
+*     0+    0                            1.2344        1.0878            11.88%
+Found incumbent of value 1.234402 after 0.03 sec. (22.46 ticks)
+*     0+    0                            1.1929        1.0878             8.81%
+Found incumbent of value 1.192873 after 0.03 sec. (23.52 ticks)
+*     0+    0                            1.1473        1.0878             5.19%
+Found incumbent of value 1.147285 after 0.03 sec. (24.92 ticks)
+      0     0        cutoff              1.1473        1.1473      219    0.00%
+Elapsed time = 0.03 sec. (24.94 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  11
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  20
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (24.95 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (24.95 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.05sec (det. 24.95 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.147285    (219 iterations, 0 nodes)
+
+Best possible:           1.147285
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7900257035E+05 (Input point)
+ 
+    The pre-triangular part of the model has 272 constraints and 265 variables.
+    The post-triangular part of the model has 120 constraints and variables.
+ 
+    Preprocessed model has 56 constraints and 62 variables
+    with 155 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.6201617825E-10 (Full preprocessed model)
+                      2.3431256935E-13 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.18342743471
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.1826554217E+00 4.1E-02       4 2.8E-03     5 F  T
+       6   4          1.1810383245E+00 4.9E-05       2 1.0E+00     2 F  T
+       8   4          1.1810383210E+00 4.1E-09       2
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95131      0.02       14      0      conopt
+  MIP    1         1.14313      0.06      190      0      cplex
+  NLP    2         1.17658<     0.02       11      0      conopt
+  MIP    2         1.14728      0.05      219      0      cplex
+  NLP    3         1.18104      0.00        8      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.176583
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:01.457
+--- base_model.gms(1950) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG2.gdx
+--- Generating MINLP model CGT
+--- base_model.gms(1952) 6 Mb
+--- LOOPS* = RG3
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1952) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:01.466
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.7515141601E-01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      8.1180853706E-11 (Full preprocessed model)
+                      6.3837823916E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.35173460348
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          9.5998007839E-01 2.5E-01      22 1.0E+00    25 T  T
+       6   4          9.5436470509E-01 3.3E-04       1 1.0E+00     1 T  T
+       7   4          9.5436470509E-01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9689999
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 256 rows and 277 columns.
+MIP Presolve modified 108 coefficients.
+Aggregator did 19 substitutions.
+Reduced MIP has 173 rows, 193 columns, and 610 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (0.96 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 170 rows, 185 columns, and 600 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 14 rows and 13 columns.
+Aggregator did 20 substitutions.
+Reduced LP has 136 rows, 152 columns, and 531 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =            -0.312684
+Iteration:    63   Dual objective     =            -0.065367
+Removing shift (12).
+Iteration:    87   Scaled dual infeas =             0.000008
+Iteration:    92   Dual objective     =             0.953567
+Removing shift (3).
+Initializing dual steep norms . . .
+Iteration:   107   Scaled dual infeas =             0.000028
+Iteration:   109   Dual objective     =             0.957945
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.957945
+Root relaxation solution time = 0.00 sec. (1.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           11.3863                            --- 
+Found incumbent of value 11.386295 after 0.02 sec. (3.98 ticks)
+*     0+    0                            7.8704                            --- 
+Found incumbent of value 7.870357 after 0.02 sec. (3.98 ticks)
+      0     0        0.9579    11        7.8704        0.9579      109   87.83%
+      0     0        0.9918     6        7.8704      Cuts: 54      139   87.40%
+      0     0        1.0486     8        7.8704      Cuts: 22      152   86.68%
+      0     0        1.1247     8        7.8704   MIRcuts: 19      186   85.71%
+      0     0        1.1279    11        7.8704      Cuts: 23      198   85.67%
+      0     0        1.1281     7        7.8704      Cuts: 26      247   85.67%
+Detecting symmetries...
+      0     0        1.1259     8        7.8704      Cuts: 19      270   85.67%
+      0     0        1.1281     8        7.8704      Cuts: 34      316   85.67%
+      0     0        1.1398     8        7.8704      Cuts: 16      340   85.52%
+      0     0        1.1357     7        7.8704   MIRcuts: 12      357   85.52%
+*     0+    0                            1.2813        1.1398            11.04%
+Found incumbent of value 1.281262 after 0.08 sec. (18.53 ticks)
+      0     0        cutoff              1.2813        1.2813      357    0.00%
+Elapsed time = 0.08 sec. (18.54 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  4
+Flow cuts applied:  6
+Mixed integer rounding cuts applied:  11
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (18.55 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (18.55 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.09sec (det. 18.55 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.281262    (357 iterations, 0 nodes)
+
+Best possible:           1.281262
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7902605239E+05 (Input point)
+ 
+    The pre-triangular part of the model has 285 constraints and 278 variables.
+    The post-triangular part of the model has 118 constraints and variables.
+    There are 5 definitional constraints and defined variables.
+ 
+    Preprocessed model has 40 constraints and 46 variables
+    with 114 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.3566592294E-11 (Full preprocessed model)
+                      6.0923488476E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.41324147255
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.3904891222E+00 4.2E+01       8 2.2E-02     4 F  T
+       6   4          1.3808685301E+00 6.1E-01       3 1.0E+00     1 T  T
+      11   4          1.3789685878E+00 2.4E-07       1 1.0E+00     1 F  T
+      12   4          1.3789685878E+00 3.2E-12       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95436      0.03        7      0      conopt
+  MIP    1         1.28126      0.09      357      0      cplex
+  NLP    2         1.37897<     0.00       12      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.875
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 248 rows and 262 columns.
+MIP Presolve modified 130 coefficients.
+Aggregator did 28 substitutions.
+Reduced MIP has 194 rows, 237 columns, and 781 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.13 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 8 rows and 16 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 186 rows, 221 columns, and 746 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.55 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 4 rows and 10 columns.
+Aggregator did 9 substitutions.
+Reduced LP has 173 rows, 202 columns, and 711 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.315569
+Iteration:    62   Dual objective     =             0.959349
+Removing shift (10).
+Iteration:    64   Scaled dual infeas =             0.000002
+Iteration:    67   Dual objective     =             0.954072
+Removing shift (2).
+Iteration:    77   Scaled dual infeas =             0.000000
+Iteration:    79   Dual objective     =             0.957492
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.957561
+Root relaxation solution time = 0.00 sec. (1.05 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          237.4477       -0.3169           100.13%
+Found incumbent of value 237.447699 after 0.02 sec. (3.47 ticks)
+*     0+    0                           10.4814       -0.3169           103.02%
+Found incumbent of value 10.481367 after 0.02 sec. (3.47 ticks)
+      0     0        0.9576    13       10.4814        0.9576       84   90.86%
+      0     0        0.9918     6       10.4814      Cuts: 64      108   90.54%
+      0     0        1.0220     8       10.4814      Cuts: 26      122   90.25%
+      0     0        1.0187    12       10.4814      Cuts: 22      155   90.25%
+      0     0        1.0256     7       10.4814      Cuts: 16      161   90.22%
+*     0+    0                            2.0017        1.0256            48.77%
+Found incumbent of value 2.001723 after 0.02 sec. (10.95 ticks)
+      0     0        1.0290     8        2.0017      Cuts: 26      166   48.60%
+*     0+    0                            1.8381        1.0290            44.02%
+Found incumbent of value 1.838099 after 0.03 sec. (12.45 ticks)
+      0     0        1.0434     7        1.8381      Cuts: 16      187   43.23%
+      0     0        1.0629     8        1.8381      Cuts: 22      192   42.18%
+      0     0        1.0647    10        1.8381      Cuts: 10      199   42.08%
+      0     0        1.0744    11        1.8381      Cuts: 15      216   41.55%
+      0     0        1.0811    12        1.8381      Cuts: 18      225   41.18%
+      0     0        1.0921     9        1.8381       Cuts: 8      230   40.59%
+*     0+    0                            1.3818        1.0921            20.97%
+Found incumbent of value 1.381766 after 0.03 sec. (20.93 ticks)
+      0     0        1.0922    10        1.3818    MIRcuts: 1      232   20.96%
+*     0+    0                            1.2822        1.0922            14.82%
+Found incumbent of value 1.282202 after 0.05 sec. (26.31 ticks)
+      0     0        cutoff              1.2822        1.2822      232    0.00%
+Elapsed time = 0.05 sec. (26.33 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  7
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  29
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (26.34 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (26.34 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.05sec (det. 26.34 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.282202    (232 iterations, 0 nodes)
+
+Best possible:           1.282202
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7906686426E+05 (Input point)
+ 
+    The pre-triangular part of the model has 269 constraints and 262 variables.
+    The post-triangular part of the model has 120 constraints and variables.
+ 
+    Preprocessed model has 59 constraints and 65 variables
+    with 166 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.5447643165E-12 (Full preprocessed model)
+                      1.5820678101E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.51793145466
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.4227837110E+00 4.2E+01       7 6.0E-02     9 F  T
+       6   4          1.3551112067E+00 2.9E-01       6 7.1E-01     8 F  T
+      11   4          1.3498962843E+00 1.9E-04       3 1.0E+00     3 F  T
+      14   4          1.3498960923E+00 6.7E-11       3
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95436      0.03        7      0      conopt
+  MIP    1         1.28126      0.09      357      0      cplex
+  NLP    2         1.37897<     0.00       12      0      conopt
+  MIP    2         1.28220      0.05      232      0      cplex
+  NLP    3         1.34990<     0.00       14      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.62 Mb (peak 0.63 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8279991
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 252 rows and 268 columns.
+MIP Presolve modified 155 coefficients.
+Aggregator did 27 substitutions.
+Reduced MIP has 213 rows, 270 columns, and 928 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.30 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.05 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 18 rows and 36 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 195 rows, 234 columns, and 850 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.33 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 5 rows and 13 columns.
+Aggregator did 9 substitutions.
+Reduced LP has 181 rows, 212 columns, and 811 nonzeros.
+Presolve time = 0.00 sec. (0.17 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.315569
+Iteration:    62   Dual objective     =             0.974513
+Removing shift (4).
+Iteration:    71   Scaled dual infeas =             0.000015
+Iteration:    74   Dual objective     =             0.956203
+Removing shift (1).
+Initializing dual steep norms . . .
+Iteration:    85   Scaled dual infeas =             0.000000
+Iteration:    86   Dual objective     =             0.957771
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.957771
+Root relaxation solution time = 0.00 sec. (1.17 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          259.5484       -0.3193           100.12%
+Found incumbent of value 259.548361 after 0.00 sec. (4.65 ticks)
+*     0+    0                           10.4813       -0.3193           103.05%
+Found incumbent of value 10.481282 after 0.00 sec. (4.65 ticks)
+      0     0        0.9578    11       10.4813        0.9578       86   90.86%
+      0     0        0.9918     6       10.4813      Cuts: 62      106   90.54%
+      0     0        1.0220     8       10.4813      Cuts: 28      119   90.25%
+      0     0        1.0187    12       10.4813      Cuts: 23      155   90.25%
+      0     0        1.0181     7       10.4813      Cuts: 22      170   90.25%
+      0     0        1.0228    10       10.4813      Cuts: 35      192   90.24%
+      0     0        1.0504     9       10.4813      Cuts: 22      214   89.98%
+      0     0        1.0555    12       10.4813      Cuts: 28      234   89.93%
+      0     0        1.0563     9       10.4813      Cuts: 17      251   89.92%
+      0     0        1.0589    11       10.4813      Cuts: 23      269   89.90%
+      0     0        1.0563     9       10.4813      Cuts: 14      282   89.90%
+*     0+    0                            1.4026        1.0589            24.51%
+Found incumbent of value 1.402609 after 0.03 sec. (24.78 ticks)
+*     0+    0                            1.2833        1.0589            17.49%
+Found incumbent of value 1.283266 after 0.03 sec. (24.79 ticks)
+      0     0        cutoff              1.2833        1.2833      282    0.00%
+Elapsed time = 0.03 sec. (24.81 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  7
+Flow cuts applied:  7
+Mixed integer rounding cuts applied:  25
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (24.82 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (24.82 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.03sec (det. 24.82 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.283266    (282 iterations, 0 nodes)
+
+Best possible:           1.283266
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 4
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.9699802001E+15 (Input point)
+ 
+    The pre-triangular part of the model has 269 constraints and 262 variables.
+    The post-triangular part of the model has 120 constraints and variables.
+ 
+    Preprocessed model has 59 constraints and 65 variables
+    with 166 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      2.2135626665E-12 (Full preprocessed model)
+                      1.5751289162E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.65228433194
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.4198787348E+00 2.7E+02      10 6.4E-02    12 F  T
+       6   4          1.3817432352E+00 2.5E-02       4 1.0E+00     5 T  T
+      10   4          1.3816869457E+00 1.6E-09       3
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95436      0.03        7      0      conopt
+  MIP    1         1.28126      0.09      357      0      cplex
+  NLP    2         1.37897<     0.00       12      0      conopt
+  MIP    2         1.28220      0.05      232      0      cplex
+  NLP    3         1.34990<     0.00       14      0      conopt
+  MIP    3         1.28327      0.03      282      0      cplex
+  NLP    4         1.38169      0.01       10      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.349896
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:01.800
+--- base_model.gms(1950) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG3.gdx
+--- Generating MINLP model CGT
+--- base_model.gms(1952) 6 Mb
+--- LOOPS* = RG4
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1952) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:01.802
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.7189611833E-01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      5.3725482396E-11 (Full preprocessed model)
+                      3.5527136788E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.52179221059
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          9.6680853668E-01 3.7E-01      21 1.0E+00    25 T  T
+       6   4          9.5237316443E-01 1.2E-04       2 1.2E+00     2 T  T
+       9   4          9.5237310354E-01 1.2E-11       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9850006
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 254 rows and 273 columns.
+MIP Presolve modified 108 coefficients.
+Aggregator did 18 substitutions.
+Reduced MIP has 176 rows, 198 columns, and 616 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.96 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 173 rows, 190 columns, and 606 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 15 rows and 14 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 137 rows, 155 columns, and 535 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000008
+Iteration:     3   Dual objective     =            -0.471861
+Iteration:    64   Dual objective     =            -0.278491
+Removing shift (10).
+Iteration:    99   Scaled dual infeas =             0.000005
+Iteration:   101   Dual objective     =             0.958964
+Removing shift (1).
+Initializing dual steep norms . . .
+Iteration:   105   Scaled dual infeas =             0.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.958984
+Root relaxation solution time = 0.00 sec. (0.97 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           34.1578       -0.4737           101.39%
+Found incumbent of value 34.157845 after 0.01 sec. (3.96 ticks)
+*     0+    0                           28.0106       -0.4737           101.69%
+Found incumbent of value 28.010600 after 0.01 sec. (3.96 ticks)
+      0     0        0.9590    11       28.0106        0.9590      105   96.58%
+      0     0        0.9978     5       28.0106      Cuts: 48      121   96.44%
+      0     0        1.0233     6       28.0106      Cuts: 16      143   96.35%
+*     0+    0                            2.9614        1.0233            65.44%
+Found incumbent of value 2.961449 after 0.01 sec. (6.89 ticks)
+      0     0        1.0446     7        2.9614       Cuts: 7      162   64.73%
+      0     0        1.0460     7        2.9614      Cuts: 14      169   64.68%
+      0     0        1.0466     9        2.9614      Cuts: 11      177   64.66%
+*     0+    0                            1.1992        1.0466            12.72%
+Found incumbent of value 1.199181 after 0.01 sec. (10.16 ticks)
+Detecting symmetries...
+      0     0        1.0495    10        1.1992       Cuts: 6      180   12.48%
+      0     0        1.0659     4        1.1992      Cuts: 16      187   11.11%
+      0     0        1.0774     4        1.1992      Cuts: 12      189   10.15%
+      0     0        1.0800     4        1.1992      Cuts: 11      194    9.94%
+      0     0        1.0903     6        1.1992      Cuts: 10      207    9.08%
+      0     0        1.0924     6        1.1992      Cuts: 15      212    8.91%
+      0     0        1.0962     5        1.1992       Cuts: 9      231    8.59%
+      0     0        1.0964     6        1.1992       Cuts: 4      233    8.57%
+      0     0        1.0942     4        1.1992       Cuts: 8      241    8.57%
+      0     0        1.0945     3        1.1992      Cuts: 13      244    8.57%
+      0     0        1.0954     6        1.1992       Cuts: 2      247    8.57%
+      0     0        1.0959     6        1.1992    MIRcuts: 2      254    8.57%
+      0     0        1.0962     5        1.1992    MIRcuts: 1      255    8.57%
+*     0+    0                            1.1826        1.0964             7.29%
+Found incumbent of value 1.182609 after 0.03 sec. (23.77 ticks)
+      0     0        cutoff              1.1826        1.1826      255    0.00%
+Elapsed time = 0.05 sec. (24.12 ticks, tree = 0.01 MB)
+
+Cover cuts applied:  1
+Implied bound cuts applied:  5
+Flow cuts applied:  9
+Mixed integer rounding cuts applied:  14
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (24.13 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (24.13 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 24.14 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.182609    (255 iterations, 0 nodes)
+
+Best possible:           1.182609
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.0118118366E+05 (Input point)
+ 
+    The pre-triangular part of the model has 279 constraints and 269 variables.
+    The post-triangular part of the model has 122 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+    There are 6 definitional constraints and defined variables.
+ 
+    Preprocessed model has 41 constraints and 50 variables
+    with 119 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      6.9491079557E-12 (Full preprocessed model)
+                      4.8155923693E-15 (After scaling)
+                      4.8155923693E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    1.37921660055
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.3379079713E+00 6.2E+01       6 2.6E-02     5 F  T
+       6   4          1.3239362419E+00 1.2E-03       2 1.0E+00     2 F  T
+      10   4          1.3224610822E+00 5.5E-13       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95237      0.01        9      0      conopt
+  MIP    1         1.18261      0.06      255      0      cplex
+  NLP    2         1.32246<     0.00       10      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9230003
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 252 rows and 267 columns.
+MIP Presolve modified 130 coefficients.
+Aggregator did 24 substitutions.
+Reduced MIP has 194 rows, 237 columns, and 781 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.10 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 6 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 191 rows, 231 columns, and 768 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.47 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Aggregator did 8 substitutions.
+Reduced LP has 182 rows, 222 columns, and 749 nonzeros.
+Presolve time = 0.00 sec. (0.16 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.478194
+Iteration:    62   Dual objective     =             0.999044
+Removing shift (8).
+Iteration:    64   Scaled dual infeas =             0.000006
+Iteration:    71   Dual objective     =             0.945187
+Initializing dual steep norms . . .
+Iteration:    90   Scaled dual infeas =             0.000000
+Iteration:    91   Dual objective     =             0.958998
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.958998
+Root relaxation solution time = 0.00 sec. (1.05 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          333.0438       -0.4782           100.14%
+Found incumbent of value 333.043780 after 0.02 sec. (3.38 ticks)
+      0     0        0.9590    11      333.0438        0.9590       91   99.71%
+      0     0        0.9978     6      333.0438      Cuts: 59      109   99.70%
+      0     0        1.0002     6      333.0438      Cuts: 15      125   99.70%
+      0     0        1.0026     6      333.0438       Cuts: 7      127   99.70%
+*     0+    0                            1.3343        1.0026            24.86%
+Found incumbent of value 1.334278 after 0.03 sec. (7.94 ticks)
+      0     0        1.0038     7        1.3343   Flowcuts: 8      130   24.77%
+      0     0        1.0280     8        1.3343       Cuts: 9      135   22.96%
+      0     0        1.0402     6        1.3343      Cuts: 11      149   22.04%
+      0     0        1.0419     8        1.3343       Cuts: 9      156   21.91%
+      0     0        1.0419     7        1.3343       Cuts: 5      166   21.91%
+      0     0        1.0464     7        1.3343       Cuts: 7      169   21.58%
+      0     0        1.0464     7        1.3343    MIRcuts: 4      184   21.57%
+*     0+    0                            1.2004        1.0464            12.83%
+Found incumbent of value 1.200416 after 0.03 sec. (17.12 ticks)
+*     0+    0                            1.1973        1.0464            12.60%
+Found incumbent of value 1.197323 after 0.03 sec. (18.47 ticks)
+*     0+    0                            1.1838        1.0464            11.61%
+Found incumbent of value 1.183842 after 0.05 sec. (18.48 ticks)
+      0     0        cutoff              1.1838        1.1838      184    0.00%
+Elapsed time = 0.05 sec. (18.50 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  7
+Flow cuts applied:  10
+Mixed integer rounding cuts applied:  10
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (18.51 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (18.51 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.05sec (det. 18.51 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.183842    (184 iterations, 0 nodes)
+
+Best possible:           1.183842
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7926250088E+05 (Input point)
+ 
+    The pre-triangular part of the model has 263 constraints and 253 variables.
+    The post-triangular part of the model has 124 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+ 
+    Preprocessed model has 61 constraints and 70 variables
+    with 171 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.2458700738E-11 (Full preprocessed model)
+                      1.9151347175E-15 (After scaling)
+                      1.9151347175E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    1.50237804277
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.3745071044E+00 6.2E+00       6 5.9E-02     7 F  T
+       6   4          1.2828849052E+00 3.7E-02       4 1.0E+00     4 T  T
+      11   4          1.2820199682E+00 3.1E-09       3
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95237      0.01        9      0      conopt
+  MIP    1         1.18261      0.06      255      0      cplex
+  NLP    2         1.32246<     0.00       10      0      conopt
+  MIP    2         1.18384      0.05      184      0      cplex
+  NLP    3         1.28202<     0.00       11      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.62 Mb (peak 0.63 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8759995
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 257 rows and 273 columns.
+MIP Presolve modified 155 coefficients.
+Aggregator did 23 substitutions.
+Reduced MIP has 212 rows, 269 columns, and 925 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.21 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 13 rows and 26 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 199 rows, 243 columns, and 869 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.97 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 2 rows and 4 columns.
+Aggregator did 8 substitutions.
+Reduced LP has 189 rows, 231 columns, and 846 nonzeros.
+Presolve time = 0.00 sec. (0.17 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.478194
+Iteration:    62   Dual objective     =             1.063743
+Removing shift (13).
+Iteration:    66   Scaled dual infeas =             0.000039
+Iteration:    72   Dual objective     =             0.868432
+Removing shift (1).
+Iteration:    92   Scaled dual infeas =             0.000000
+Iteration:    94   Dual objective     =             0.956427
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.956427
+Root relaxation solution time = 0.02 sec. (1.25 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          373.8426       -0.4819           100.13%
+Found incumbent of value 373.842552 after 0.02 sec. (4.28 ticks)
+      0     0        0.9564    10      373.8426        0.9564       94   99.74%
+      0     0        1.0013     5      373.8426      Cuts: 56      115   99.73%
+      0     0        1.0059     6      373.8426      Cuts: 10      121   99.73%
+*     0+    0                            1.6870        1.0059            40.37%
+Found incumbent of value 1.686974 after 0.02 sec. (7.71 ticks)
+      0     0        1.0057     8        1.6870       Cuts: 6      134   40.37%
+      0     0        1.0217     7        1.6870      Cuts: 14      139   39.43%
+*     0+    0                            1.3343        1.0217            23.42%
+Found incumbent of value 1.334278 after 0.02 sec. (10.63 ticks)
+      0     0        1.0270     8        1.3343      Cuts: 10      146   23.03%
+      0     0        1.0319     7        1.3343       Cuts: 8      149   22.66%
+      0     0        1.0431     8        1.3343      Cuts: 12      160   21.83%
+      0     0        1.0493     9        1.3343       Cuts: 5      166   21.36%
+      0     0        1.0559     8        1.3343      Cuts: 13      172   20.86%
+      0     0        1.0562     6        1.3343       Cuts: 9      187   20.84%
+      0     0        1.0566     7        1.3343       Cuts: 4      189   20.81%
+      0     0        1.0572     7        1.3343       Cuts: 4      193   20.76%
+      0     0        1.0573     8        1.3343    MIRcuts: 1      194   20.76%
+*     0+    0                            1.1935        1.0573            11.42%
+Found incumbent of value 1.193525 after 0.06 sec. (25.12 ticks)
+      0     0        cutoff              1.1935        1.1935      194    0.00%
+Elapsed time = 0.06 sec. (25.14 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  6
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  12
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (25.15 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.06 sec. (25.15 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 25.15 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.193525    (194 iterations, 0 nodes)
+
+Best possible:           1.193525
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 4
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.9699802001E+15 (Input point)
+ 
+    The pre-triangular part of the model has 240 constraints and 230 variables.
+    The post-triangular part of the model has 141 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+    There are 10 definitional constraints and defined variables.
+ 
+    Preprocessed model has 57 constraints and 66 variables
+    with 166 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.0493417246E-10 (Full preprocessed model)
+                      8.7221896372E-15 (After scaling)
+                      8.7221896372E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    1.30463284552
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2924803227E+00 2.8E-01       7 1.5E-02     4 F  T
+       6   4          1.2870007071E+00 7.1E-05       3 1.0E+00     3 F  T
+       8   4          1.2870006596E+00 5.3E-08       3
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95237      0.01        9      0      conopt
+  MIP    1         1.18261      0.06      255      0      cplex
+  NLP    2         1.32246<     0.00       10      0      conopt
+  MIP    2         1.18384      0.05      184      0      cplex
+  NLP    3         1.28202<     0.00       11      0      conopt
+  MIP    3         1.19353      0.06      194      0      cplex
+  NLP    4         1.28700      0.00        8      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.282020
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:02.135
+--- base_model.gms(1950) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG4.gdx
+--- base_model.gms(1958) 4 Mb
+--- GDXin=C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- 433 symbol(s) loaded implicitly
+--- GDX File (execute_load) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\moo_tac.gdx
+--- base_model.gms(1959) 4 Mb
+--- Generating MINLP model CGT
+--- base_model.gms(1962) 6 Mb
+--- LOOPS FOR/WHILE = 2
+---       RG_set = RG4
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1962) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:02.139
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          6.1834099884E+01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.7632147398E-11 (Full preprocessed model)
+                      6.1797789108E-14 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.49847969907
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2897623906E+00 7.7E-01      22 1.0E+00    25 T  T
+       6   4          9.6237854428E-01 3.6E-02       6 1.0E+00     1 T  T
+      11   4          9.5023014028E-01 1.1E-02       2 1.0E+00     2 T  T
+      13   4          9.4991559528E-01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9850006
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 256 rows and 278 columns.
+MIP Presolve modified 108 coefficients.
+Aggregator did 19 substitutions.
+Reduced MIP has 173 rows, 192 columns, and 613 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.96 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 170 rows, 184 columns, and 603 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 13 rows and 12 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 136 rows, 151 columns, and 534 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.472706
+Iteration:    62   Dual objective     =            -0.348621
+Removing shift (14).
+Iteration:   121   Scaled dual infeas =             0.000013
+Iteration:   124   Dual objective     =             0.913878
+Removing shift (2).
+Iteration:   137   Scaled dual infeas =             0.000001
+Iteration:   140   Dual objective     =             0.951655
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.953538
+Root relaxation solution time = 0.00 sec. (1.11 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           34.2672       -0.4736           101.38%
+Found incumbent of value 34.267189 after 0.02 sec. (4.07 ticks)
+*     0+    0                           28.0206       -0.4736           101.69%
+Found incumbent of value 28.020577 after 0.02 sec. (4.07 ticks)
+      0     0        0.9535    11       28.0206        0.9535      143   96.60%
+      0     0        1.0034     9       28.0206      Cuts: 55      171   96.42%
+      0     0        1.0334     7       28.0206      Cuts: 22      189   96.31%
+      0     0        1.0368     7       28.0206       Cuts: 9      199   96.30%
+*     0+    0                            1.5168        1.0368            31.65%
+Found incumbent of value 1.516822 after 0.02 sec. (8.85 ticks)
+      0     0        1.0484     8        1.5168       Cuts: 8      202   30.88%
+      0     0        1.0703    10        1.5168      Cuts: 23      211   29.44%
+Detecting symmetries...
+      0     0        1.0753     7        1.5168      Cuts: 10      216   29.11%
+      0     0        1.0774     7        1.5168      Cuts: 13      219   28.97%
+      0     0        1.0778     7        1.5168       Cuts: 3      220   28.94%
+*     0+    0                            1.2025        1.0778            10.37%
+Found incumbent of value 1.202517 after 0.03 sec. (14.35 ticks)
+      0     0        1.0780     8        1.2025       Cuts: 3      222   10.35%
+*     0+    0                            1.1984        1.0780            10.05%
+Found incumbent of value 1.198431 after 0.03 sec. (15.55 ticks)
+      0     0        1.0882     9        1.1984       Cuts: 5      227    9.20%
+      0     0        1.0969     8        1.1984       Cuts: 9      231    8.47%
+      0     0        1.0990     7        1.1984       Cuts: 4      236    8.29%
+      0     0        1.0999     8        1.1984       Cuts: 4      239    8.22%
+      0     0        1.1003     8        1.1984       Cuts: 2      240    8.19%
+      0     0        1.1002     8        1.1984       Cuts: 4      264    8.19%
+      0     0        1.1004     8        1.1984    MIRcuts: 1      265    8.18%
+*     0+    0                            1.1819        1.1004             6.89%
+Found incumbent of value 1.181858 after 0.06 sec. (25.87 ticks)
+      0     0        cutoff              1.1819        1.1819      265    0.00%
+Elapsed time = 0.09 sec. (25.89 ticks, tree = 0.01 MB)
+
+Cover cuts applied:  1
+Implied bound cuts applied:  4
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  9
+Multi commodity flow cuts applied:  1
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (25.90 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (25.90 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.09sec (det. 25.90 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.181858    (265 iterations, 0 nodes)
+
+Best possible:           1.181858
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7900731226E+05 (Input point)
+ 
+    The pre-triangular part of the model has 281 constraints and 271 variables.
+    The post-triangular part of the model has 122 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+    There are 6 definitional constraints and defined variables.
+ 
+    Preprocessed model has 39 constraints and 48 variables
+    with 115 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      9.9905639317E-12 (Full preprocessed model)
+                      6.3629657099E-15 (After scaling)
+                      6.3629657099E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    1.30639689992
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2827306934E+00 6.2E+01       9 2.1E-02     4 F  T
+       6   4          1.2650683691E+00 1.1E+00       3 1.0E+00     1 T  T
+      10   4          1.2627327641E+00 6.4E-08       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.94992      0.01       13      0      conopt
+  MIP    1         1.18186      0.09      265      0      cplex
+  NLP    2         1.26273<     0.00       10      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8910007
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 252 rows and 268 columns.
+MIP Presolve modified 139 coefficients.
+Aggregator did 24 substitutions.
+Reduced MIP has 194 rows, 235 columns, and 784 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.11 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 8 rows and 16 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 186 rows, 219 columns, and 749 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.55 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 4 rows and 10 columns.
+Aggregator did 8 substitutions.
+Reduced LP has 174 rows, 201 columns, and 716 nonzeros.
+Presolve time = 0.02 sec. (0.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.476231
+Iteration:    62   Dual objective     =             0.934826
+Removing shift (9).
+Iteration:    75   Scaled dual infeas =             0.000011
+Iteration:    79   Dual objective     =             0.931145
+Removing shift (2).
+Initializing dual steep norms . . .
+Iteration:    95   Scaled dual infeas =             0.000000
+Iteration:    96   Dual objective     =             0.956118
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.956118
+Root relaxation solution time = 0.02 sec. (1.11 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           71.2685       -0.4782           100.67%
+Found incumbent of value 71.268522 after 0.02 sec. (3.50 ticks)
+*     0+    0                           28.4017       -0.4782           101.68%
+Found incumbent of value 28.401721 after 0.02 sec. (3.50 ticks)
+      0     0        0.9561    12       28.4017        0.9561       96   96.63%
+      0     0        0.9946    12       28.4017      Cuts: 62      129   96.50%
+      0     0        0.9986    10       28.4017      Cuts: 40      168   96.48%
+      0     0        1.0073     6       28.4017      Cuts: 24      178   96.45%
+      0     0        1.0089     8       28.4017       Cuts: 9      182   96.45%
+*     0+    0                            1.5977        1.0089            36.85%
+Found incumbent of value 1.597714 after 0.02 sec. (10.47 ticks)
+      0     0        1.0099     9        1.5977      Cuts: 13      184   36.79%
+      0     0        1.0310    10        1.5977      Cuts: 13      197   35.47%
+      0     0        1.0366    10        1.5977       Cuts: 7      201   35.12%
+*     0+    0                            1.2793        1.0366            18.98%
+Found incumbent of value 1.279312 after 0.03 sec. (14.95 ticks)
+      0     0        1.0366    11        1.2793    MIRcuts: 1      203   18.98%
+      0     0        1.0412     9        1.2793       Cuts: 5      206   18.61%
+      0     0        1.0477     9        1.2793       Cuts: 5      208   18.10%
+*     0+    0                            1.2761        1.0477            17.90%
+Found incumbent of value 1.276102 after 0.05 sec. (22.99 ticks)
+*     0+    0                            1.2625        1.0477            17.01%
+Found incumbent of value 1.262475 after 0.11 sec. (23.74 ticks)
+      0     0        cutoff              1.2625        1.2625      208    0.00%
+Elapsed time = 0.11 sec. (23.75 ticks, tree = 0.01 MB)
+
+Cover cuts applied:  1
+Implied bound cuts applied:  7
+Flow cuts applied:  13
+Mixed integer rounding cuts applied:  9
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (23.76 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (23.76 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.11sec (det. 23.76 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.262475    (208 iterations, 0 nodes)
+
+Best possible:           1.262475
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.8223124747E+05 (Input point)
+ 
+    The pre-triangular part of the model has 273 constraints and 260 variables.
+    The post-triangular part of the model has 130 constraints and variables.
+    There are 1 penalty and minimax constraints with 2 variables.
+    There are 6 definitional constraints and defined variables.
+ 
+    Preprocessed model has 39 constraints and 51 variables
+    with 120 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      6.8214323079E-12 (Full preprocessed model)
+                      1.6237011735E-15 (After scaling)
+                      1.6237011735E-15 (After adjusting penalty variables)
+ 
+ ** Feasible solution. Value of objective =    1.28526569482
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2656968748E+00 2.6E-01       4 6.8E-01     1 F  T
+       6   4          1.2650669265E+00 8.2E-11       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.94992      0.01       13      0      conopt
+  MIP    1         1.18186      0.09      265      0      cplex
+  NLP    2         1.26273<     0.00       10      0      conopt
+  MIP    2         1.26248      0.11      208      0      cplex
+  NLP    3         1.26507      0.00        6      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.262733
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:02.479
+--- base_model.gms(1959) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG4.gdx
+--- Generating MINLP model CGT
+--- base_model.gms(1962) 6 Mb
+--- LOOPS FOR/WHILE = 3
+---       RG_set = RG3
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1962) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:02.485
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.8447593819E-01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      5.6248117275E-11 (Full preprocessed model)
+                      6.9881600506E-14 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.44720870225
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.2592884428E+00 6.5E-01      22 1.0E+00    25 T  T
+       6   4          9.5423054329E-01 1.1E-06       1 1.2E+00     1 T  T
+       7   4          9.5423054329E-01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9839993
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 255 rows and 278 columns.
+MIP Presolve modified 103 coefficients.
+Aggregator did 19 substitutions.
+Reduced MIP has 174 rows, 192 columns, and 615 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.95 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 171 rows, 184 columns, and 605 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 13 rows and 12 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 137 rows, 151 columns, and 536 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =            -0.312684
+Iteration:    63   Dual objective     =            -0.124719
+Removing shift (11).
+Iteration:    94   Scaled dual infeas =             0.000006
+Iteration:    98   Dual objective     =             0.939644
+Removing shift (2).
+Iteration:   116   Scaled dual infeas =             0.000001
+Iteration:   120   Dual objective     =             0.956276
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.956783
+Root relaxation solution time = 0.00 sec. (1.07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           24.4248                            --- 
+Found incumbent of value 24.424827 after 0.01 sec. (4.03 ticks)
+*     0+    0                           19.3753                            --- 
+Found incumbent of value 19.375273 after 0.01 sec. (4.03 ticks)
+      0     0        0.9568    12       19.3753        0.9568      126   95.06%
+      0     0        0.9922     7       19.3753      Cuts: 56      149   94.88%
+      0     0        1.0448     7       19.3753      Cuts: 21      171   94.61%
+      0     0        1.0965     8       19.3753      Cuts: 10      176   94.34%
+      0     0        1.0967     8       19.3753       Cuts: 5      180   94.34%
+*     0+    0                            1.9807        1.0967            44.63%
+Found incumbent of value 1.980703 after 0.01 sec. (9.59 ticks)
+      0     0        1.0970     8        1.9807      Cuts: 10      182   44.62%
+Detecting symmetries...
+      0     0        1.1127     8        1.9807      Cuts: 17      189   43.82%
+*     0+    0                            1.4044        1.1127            20.76%
+Found incumbent of value 1.404351 after 0.03 sec. (12.21 ticks)
+      0     0        1.1131     9        1.4044       Cuts: 3      193   20.74%
+      0     0        1.1366    10        1.4044      Cuts: 13      198   19.07%
+      0     0        1.1723     9        1.4044       Cuts: 9      217   16.52%
+      0     0        1.1826     9        1.4044       Cuts: 7      225   15.79%
+*     0+    0                            1.3805        1.1826            14.34%
+Found incumbent of value 1.380528 after 0.05 sec. (17.25 ticks)
+      0     0        1.1871    10        1.3805       Cuts: 7      226   14.01%
+*     0+    0                            1.2810        1.1871             7.33%
+Found incumbent of value 1.280973 after 0.06 sec. (18.26 ticks)
+      0     0        1.1888    11        1.2810       Cuts: 2      231    7.20%
+      0     0        cutoff              1.2810        1.2810      231    0.00%
+Elapsed time = 0.12 sec. (23.48 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  3
+Flow cuts applied:  7
+Mixed integer rounding cuts applied:  11
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0.12 sec. (23.49 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.12 sec. (23.49 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.12sec (det. 23.50 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.280973    (231 iterations, 0 nodes)
+
+Best possible:           1.280973
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7900706921E+05 (Input point)
+ 
+    The pre-triangular part of the model has 287 constraints and 280 variables.
+    The post-triangular part of the model has 118 constraints and variables.
+    There are 5 definitional constraints and defined variables.
+ 
+    Preprocessed model has 38 constraints and 44 variables
+    with 110 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      6.4727112559E-12 (Full preprocessed model)
+                      7.8478890053E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.36469500547
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.3519133510E+00 4.2E+01       8 1.7E-02     4 F  T
+       6   4          1.3388401024E+00 9.0E-01       3 1.1E+00     2 T  T
+      10   4          1.3372596634E+00 6.9E-08       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95423      0.02        7      0      conopt
+  MIP    1         1.28097      0.12      231      0      cplex
+  NLP    2         1.33726<     0.01       10      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.8439999
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 247 rows and 263 columns.
+MIP Presolve modified 132 coefficients.
+Aggregator did 28 substitutions.
+Reduced MIP has 195 rows, 236 columns, and 786 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.13 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 8 rows and 16 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 187 rows, 220 columns, and 751 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.55 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 4 rows and 10 columns.
+Aggregator did 9 substitutions.
+Reduced LP has 174 rows, 201 columns, and 716 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.315455
+Iteration:    62   Dual objective     =             0.959782
+Removing shift (7).
+Iteration:    65   Scaled dual infeas =             0.000004
+Iteration:    70   Dual objective     =             0.956362
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.956790
+Root relaxation solution time = 0.00 sec. (0.96 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           48.7833       -0.3168           100.65%
+Found incumbent of value 48.783292 after 0.00 sec. (3.38 ticks)
+      0     0        0.9568    12       48.7833        0.9568       77   98.04%
+      0     0        0.9926     4       48.7833      Cuts: 66       98   97.97%
+      0     0        1.0225     6       48.7833      Cuts: 10      105   97.90%
+      0     0        1.0182     7       48.7833      Cuts: 11      143   97.90%
+      0     0        1.0193     9       48.7833      Cuts: 22      149   97.90%
+      0     0        1.0223    11       48.7833      Cuts: 17      156   97.90%
+*     0+    0                            1.8734        1.0225            45.42%
+Found incumbent of value 1.873377 after 0.02 sec. (11.61 ticks)
+      0     0        1.0500    13        1.8734      Cuts: 20      171   43.95%
+      0     0        1.0734    11        1.8734      Cuts: 36      190   42.70%
+*     0+    0                            1.4610        1.0734            26.53%
+Found incumbent of value 1.460980 after 0.02 sec. (14.87 ticks)
+      0     0        1.0861    10        1.4610      Cuts: 19      208   25.66%
+*     0+    0                            1.4372        1.0861            24.43%
+Found incumbent of value 1.437157 after 0.02 sec. (16.86 ticks)
+      0     0        1.0883    10        1.4372       Cuts: 9      212   24.27%
+      0     0        1.0906     8        1.4372       Cuts: 8      219   24.12%
+      0     0        1.0911     8        1.4372       Cuts: 9      223   24.08%
+      0     0        1.0911     9        1.4372    MIRcuts: 2      224   24.08%
+*     0+    0                            1.4368        1.0911            24.06%
+Found incumbent of value 1.436827 after 0.03 sec. (22.87 ticks)
+*     0+    0                            1.3376        1.0911            18.43%
+Found incumbent of value 1.337596 after 0.05 sec. (25.48 ticks)
+      0     0        cutoff              1.3376        1.3376      224    0.00%
+Elapsed time = 0.05 sec. (25.50 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  5
+Flow cuts applied:  16
+Mixed integer rounding cuts applied:  22
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (25.51 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (25.51 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 25.51 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.337596    (224 iterations, 0 nodes)
+
+Best possible:           1.337596
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7897604237E+05 (Input point)
+ 
+    The pre-triangular part of the model has 284 constraints and 277 variables.
+    The post-triangular part of the model has 118 constraints and variables.
+ 
+    Preprocessed model has 46 constraints and 52 variables
+    with 132 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      2.2424317958E-10 (Full preprocessed model)
+                      9.5132235423E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.34244312913
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.3379511623E+00 9.6E-01       6 9.4E-03     2 F  T
+       5   4          1.3375901411E+00 3.0E-08       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95423      0.02        7      0      conopt
+  MIP    1         1.28097      0.12      231      0      cplex
+  NLP    2         1.33726<     0.01       10      0      conopt
+  MIP    2         1.33760      0.06      224      0      cplex
+  NLP    3         1.33759      0.01        5      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.337260
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:02.809
+--- base_model.gms(1959) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG3.gdx
+--- Generating MINLP model CGT
+--- base_model.gms(1962) 6 Mb
+--- LOOPS FOR/WHILE = 4
+---       RG_set = RG2
+---   448 rows  447 columns  1,546 non-zeroes
+---   739 nl-code  123 nl-non-zeroes
+---   47 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.077E-05, 3.113E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 5.415E+04] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E-05, 3.113E+06] - Zero values observed as well
+--- base_model.gms(1962) 4 Mb
+--- Executing DICOPT (Solvelink=2): elapsed 0:00:02.820
+--- Warning: SolveOpt is set to CLEAR (2).
+---          Empty equations are not passed to the solver
+---          and will be cleared when reading the solution.
+-------------------------------------------------------------------------------
+Dicopt 2         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+-------------------------------------------------------------------------------
+*** This solver runs with a demo license. No commercial use.
+--- DICOPT: Starting major iteration 1
+--- DICOPT: Setting up first (relaxed) NLP.
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.6506858752E-01 (Input point)
+ 
+    The pre-triangular part of the model has 56 constraints and 49 variables.
+    The post-triangular part of the model has 163 constraints and variables.
+    There are 26 definitional constraints and defined variables.
+ 
+    Preprocessed model has 203 constraints and 209 variables
+    with 682 Jacobian elements, 26 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      4.2588405025E-11 (Full preprocessed model)
+                      6.2796989830E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.17219107596
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.0541270569E+00 5.3E-01      21 1.0E+00    25 T  T
+       5   4          9.5128256508E-01 0.0E+00       0
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+--- DICOPT: Setting up first MIP
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.61 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.06 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9850006
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 255 rows and 278 columns.
+MIP Presolve modified 105 coefficients.
+Aggregator did 19 substitutions.
+Reduced MIP has 174 rows, 192 columns, and 615 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.95 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 3 rows and 8 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 171 rows, 184 columns, and 605 nonzeros.
+Reduced MIP has 43 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 13 rows and 12 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 137 rows, 151 columns, and 536 nonzeros.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =            -0.154333
+Iteration:    63   Dual objective     =            -0.017242
+Removing shift (13).
+Iteration:    96   Scaled dual infeas =             0.000014
+Iteration:   101   Dual objective     =             0.876089
+Removing shift (3).
+Iteration:   116   Scaled dual infeas =             0.000003
+Iteration:   121   Dual objective     =             0.951988
+Removing shift (1).
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.952477
+Root relaxation solution time = 0.00 sec. (1.12 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           14.6269                            --- 
+Found incumbent of value 14.626863 after 0.01 sec. (4.08 ticks)
+*     0+    0                           10.5536                            --- 
+Found incumbent of value 10.553625 after 0.01 sec. (4.08 ticks)
+      0     0        0.9525    12       10.5536        0.9525      132   90.97%
+      0     0        0.9829     6       10.5536      Cuts: 58      154   90.69%
+      0     0        1.0246     8       10.5536      Cuts: 21      166   90.29%
+      0     0        1.0931     9       10.5536      Cuts: 17      178   89.64%
+      0     0        1.0935     9       10.5536       Cuts: 8      181   89.64%
+      0     0        1.0944     9       10.5536       Cuts: 7      184   89.63%
+*     0+    0                            1.1405        1.0944             4.05%
+Found incumbent of value 1.140527 after 0.01 sec. (10.35 ticks)
+Detecting symmetries...
+      0     0        1.1047     7        1.1405       Cuts: 3      185    3.14%
+      0     0        1.1338     6        1.1405    MIRcuts: 4      187    0.59%
+      0     0        cutoff              1.1405        1.1405      187    0.00%
+Elapsed time = 0.06 sec. (14.63 ticks, tree = 0.01 MB)
+
+Implied bound cuts applied:  3
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  16
+Gomory fractional cuts applied:  8
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (14.64 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.06 sec. (14.64 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 14.64 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.140527    (187 iterations, 0 nodes)
+
+Best possible:           1.140527
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 2
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7900710671E+05 (Input point)
+ 
+    The pre-triangular part of the model has 287 constraints and 280 variables.
+    The post-triangular part of the model has 118 constraints and variables.
+    There are 5 definitional constraints and defined variables.
+ 
+    Preprocessed model has 38 constraints and 44 variables
+    with 110 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.3575252034E-11 (Full preprocessed model)
+                      7.0013439490E-15 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.18243580440
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.1796486802E+00 2.1E+01       7 6.7E-03     4 F  T
+       6   4          1.1719576217E+00 5.7E-01       3 1.0E+00     1 T  T
+      11   4          1.1706835386E+00 9.8E-06       1 1.0E+00     1 F  T
+      12   4          1.1706835386E+00 1.8E-08       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Setting up next MIP
+--- GMO Resort Time 0ms
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95128      0.01        5      0      conopt
+  MIP    1         1.14053      0.06      187      0      cplex
+  NLP    2         1.17068<     0.02       12      0      conopt
+
+IBM ILOG CPLEX   54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.02 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.61 Mb (peak 0.62 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.02 Mb (peak 0.07 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.2.0 | 2024-11-25 | 0edbb82fd
+CPXPARAM_Advance                                 2
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Preprocessing_QCPDuals                  0
+CPXPARAM_TimeLimit                               9999999999.9069996
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 247 rows and 263 columns.
+MIP Presolve modified 134 coefficients.
+Aggregator did 28 substitutions.
+Reduced MIP has 195 rows, 236 columns, and 786 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.13 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 8 rows and 16 columns.
+MIP Presolve modified 15 coefficients.
+Reduced MIP has 187 rows, 220 columns, and 751 nonzeros.
+Reduced MIP has 43 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.55 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Parallel mode: deterministic, using up to 4 threads for parallel tasks at root LP.
+Tried aggregator 1 time.
+LP Presolve eliminated 4 rows and 10 columns.
+Aggregator did 9 substitutions.
+Reduced LP has 174 rows, 201 columns, and 716 nonzeros.
+Presolve time = 0.00 sec. (0.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.155725
+Iteration:    62   Dual objective     =             0.598863
+Removing shift (7).
+Iteration:    77   Scaled dual infeas =             0.000324
+Iteration:    80   Dual objective     =             0.247623
+Removing shift (1).
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.952551
+Root relaxation solution time = 0.00 sec. (1.10 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           26.7280       -0.1564           100.59%
+Found incumbent of value 26.727984 after 0.00 sec. (3.52 ticks)
+      0     0        0.9526    10       26.7280        0.9526       96   96.44%
+      0     0        0.9828     7       26.7280      Cuts: 64      120   96.32%
+      0     0        0.9953    10       26.7280      Cuts: 24      138   96.28%
+      0     0        1.0529    11       26.7280      Cuts: 20      181   96.06%
+      0     0        1.0568    10       26.7280      Cuts: 19      193   96.05%
+*     0+    0                            2.2119        1.0568            52.22%
+Found incumbent of value 2.211902 after 0.02 sec. (10.68 ticks)
+      0     0        1.0575    11        2.2119       Cuts: 9      197   52.19%
+      0     0        1.0612    11        2.2119      Cuts: 15      206   52.02%
+      0     0        1.0613    11        2.2119       Cuts: 2      209   52.02%
+      0     0        1.0616    12        2.2119    MIRcuts: 3      211   52.00%
+      0     0        1.0681    13        2.2119       Cuts: 3      214   51.71%
+      0     0        1.0695    11        2.2119       Cuts: 8      225   51.65%
+*     0+    0                            1.5787        1.0695            32.25%
+Found incumbent of value 1.578735 after 0.03 sec. (19.91 ticks)
+      0     0        1.0704    11        1.5787       Cuts: 8      239   32.20%
+*     0+    0                            1.5532        1.0704            31.08%
+Found incumbent of value 1.553212 after 0.03 sec. (21.68 ticks)
+      0     0        1.0733    11        1.5532      Cuts: 18      242   30.90%
+      0     0        1.0738    12        1.5532       Cuts: 5      246   30.86%
+      0     0        1.0939    11        1.5532       Cuts: 8      251   29.57%
+*     0+    0                            1.1709        1.0939             6.57%
+Found incumbent of value 1.170855 after 0.03 sec. (25.62 ticks)
+      0     0        1.0984    11        1.1709       Cuts: 4      258    6.19%
+      0     0        1.0989    12        1.1709       Cuts: 3      259    6.14%
+      0     0        1.1008    10        1.1709       Cuts: 3      262    5.99%
+      0     0        1.1008    11        1.1709   Flowcuts: 1      263    5.98%
+*     0+    0                            1.1709        1.1008             5.98%
+Found incumbent of value 1.170852 after 0.05 sec. (33.89 ticks)
+      0     0        cutoff              1.1709        1.1709      263    0.00%
+Elapsed time = 0.05 sec. (33.90 ticks, tree = 0.01 MB)
+
+Cover cuts applied:  1
+Implied bound cuts applied:  6
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  20
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (33.92 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (33.92 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.06sec (det. 33.92 ticks)
+
+
+Proven optimal solution
+MIP Solution:            1.170852    (263 iterations, 0 nodes)
+
+Best possible:           1.170852
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- DICOPT: Starting major iteration 3
+--- DICOPT: Setting up next NLP
+
+CONOPT 4         54.4.0 9a60ae27 Sep 9, 2026           WEI x86 64bit/MS Window
+
+--- *** This solver runs with a demo license. No commercial use.
+ 
+ 
+    C O N O P T   version 4.39.2
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 4 threads.
+ 
+ 
+    The user model has 448 constraints and 447 variables
+    with 1546 Jacobian elements, 123 of which are nonlinear.
+    The Hessian of the Lagrangian has 104 elements on the diagonal,
+    113 elements below the diagonal, and 112 nonlinear variables.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.7897449609E+05 (Input point)
+ 
+    The pre-triangular part of the model has 248 constraints and 243 variables.
+    The post-triangular part of the model has 135 constraints and variables.
+ 
+    Preprocessed model has 65 constraints and 69 variables
+    with 178 Jacobian elements, 0 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.0020938070E-10 (Full preprocessed model)
+                      2.4945842053E-13 (After scaling)
+ 
+ ** Feasible solution. Value of objective =    1.17130986624
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          1.1708906631E+00 4.8E-01       9 1.8E-03     7 F  T
+       4   4          1.1708487774E+00 4.1E-09       1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- DICOPT: Checking convergence
+--- DICOPT: Search stopped on worsening of NLP subproblems
+--- DICOPT: Log File:
+ Major Major     Objective    CPU time  Itera- Evaluation Solver
+ Step  Iter       Function     (Sec)    tions   Errors
+  NLP    1         0.95128      0.01        5      0      conopt
+  MIP    1         1.14053      0.06      187      0      cplex
+  NLP    2         1.17068<     0.02       12      0      conopt
+  MIP    2         1.17085      0.06      263      0      cplex
+  NLP    3         1.17085      0.00        4      0      conopt
+--- DICOPT: Terminating...
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 1.170684
+--- Reading solution for model CGT
+***
+*** Reading with solveopt=CLEAR (2)
+***
+--- Executing after solve: elapsed 0:00:03.103
+--- base_model.gms(1959) 4 Mb
+--- GDX File (execute_unload) C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\point_RG2.gdx
+--- base_model.gms(1989) 4 Mb
+--- GDX File C:\Users\Adam\Desktop\P57 CHE4045Z 2026\pipeline_results\DIND_0.5\coalition_results\1234\sol.gdx
+*** Status: Normal completion
+--- Job base_model.gms Stop 11/15/26 13:16:24 elapsed 0:00:03.110
