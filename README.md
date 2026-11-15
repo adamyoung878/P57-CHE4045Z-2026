@@ -147,6 +147,8 @@ gams base_model.gms --COAL=134 --OBJ=EcO
 
 ## Authors
 
-Authors:        Adam Young and Flynn Newell
-Course:         CHE4045Z, 2026
-Supervisors:    Prof. Adeniyi Isafiade, Takudzwa Chitsiga, Dr. Kyle Abrahams
+- **Authors**:      Adam Young and Flynn Newell
+- **Course**:       CHE4045Z, 2026
+- **Supervisors**:  Prof. Adeniyi Isafiade, Takudzwa Chitsiga, Dr. Kyle Abrahams
+
+No licence is granted.
